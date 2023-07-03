@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import AddTeacher from "./AddTeacher";
+import "./App.css";
+import Dashboard from "./Dashboard";
+
 
 function App() {
+  const [teachers, setTeachers] = useState([]);
+  const skills = [
+    "HTML", 'CSS', "JS", "React",
+     "ANGULAR", "NODE", "C#", "PYTHON",
+      "OOP", "SQL", "DJANGO", "JAVA", "C++"
+  ]
+
+  const add = (t) => {
+    setTeachers([...teachers, t]);
+  }
+  console.log(teachers);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Teacher App</h1>
+      <div id="main">
+        <AddTeacher data={skills}  addTeacherMethod={add} />
+        <Dashboard/>
+      </div>
     </div>
   );
 }
