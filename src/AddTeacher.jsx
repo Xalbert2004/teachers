@@ -34,6 +34,7 @@ export default function AddTeacher({ data, addTeacherMethod }) {
         <form
          className='form'
          onSubmit={addNewTeacher}
+         name='languages'
          >
             <div>
                 <label>Name</label>

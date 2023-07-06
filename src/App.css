@@ -7,3 +7,16 @@
   display: flex;
   justify-content: space-between;
 }
+
+.teacher{
+  border: 1px solid;
+}
+
+.checkbox-list{
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid;
+}
+

@@ -1,0 +1,7 @@
+{
+    "data":[
+        {"name":"Armen", "age":25, "skills":["HTML", "CSS", "JS", "React"]},
+        {"name":"Anahit", "age":27, "skills":["ANGULAR", "NODE", "C#", "PYTHON"]},
+        {"name":"Tigran", "age":38, "skills":["OOP", "SQL", "DJANGO", "JAVA", "C++"]}
+    ]
+}
